@@ -179,15 +179,15 @@ GO
             string uniqueKeys = Path.Combine(tables, "UniqueKeys");
             string triggers = Path.Combine(programmability, "Triggers");
 
-            //            if (!Directory.Exists(tables)) Directory.CreateDirectory(tables);
-            //            if (!Directory.Exists(programmability)) Directory.CreateDirectory(programmability);
-            //            if (!Directory.Exists(indexes)) Directory.CreateDirectory(indexes);
-            //            if (!Directory.Exists(constraints)) Directory.CreateDirectory(constraints);
-            //            if (!Directory.Exists(foreignKeys)) Directory.CreateDirectory(foreignKeys);
-            //            if (!Directory.Exists(uniqueKeys)) Directory.CreateDirectory(uniqueKeys);
-            //            if (!Directory.Exists(primaryKeys)) Directory.CreateDirectory(primaryKeys);
-            //            if (!Directory.Exists(triggers)) Directory.CreateDirectory(triggers);
-            //            if (!Directory.Exists(data)) Directory.CreateDirectory(data);
+            if (!Directory.Exists(tables)) Directory.CreateDirectory(tables);
+            if (!Directory.Exists(programmability)) Directory.CreateDirectory(programmability);
+            if (!Directory.Exists(indexes)) Directory.CreateDirectory(indexes);
+            if (!Directory.Exists(constraints)) Directory.CreateDirectory(constraints);
+            if (!Directory.Exists(foreignKeys)) Directory.CreateDirectory(foreignKeys);
+            if (!Directory.Exists(uniqueKeys)) Directory.CreateDirectory(uniqueKeys);
+            if (!Directory.Exists(primaryKeys)) Directory.CreateDirectory(primaryKeys);
+            if (!Directory.Exists(triggers)) Directory.CreateDirectory(triggers);
+            if (!Directory.Exists(data)) Directory.CreateDirectory(data);
 
             foreach (Table table in db.Tables)
             {
